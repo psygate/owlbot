@@ -4,3 +4,28 @@
  * This is a general purpose Gradle build.
  * Learn how to create Gradle builds at https://guides.gradle.org/creating-new-gradle-builds
  */
+
+plugins {
+    id 'java'
+    id 'scala'
+    id 'idea'
+}
+
+repositories {
+    maven { url 'https://jitpack.io' }
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    implementation 'com.discord4j:discord4j-core:3.0.12'
+
+    implementation 'io.vavr:vavr:1.+'
+    implementation 'org.tomlj:tomlj:1.+'
+
+
+//    implementation "org.scala-lang:scala-library:2.13.+"
+//    implementation "org.scala-lang:scala-reflect:2.13.+"
+
+//    testImplementation "org.scala-lang:scala-library:2.13.+"
+}
