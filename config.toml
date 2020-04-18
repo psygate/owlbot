@@ -1,2 +1,7 @@
-[main]
-    secrets_file = "secrets.toml"
+[commands.settings]
+    command_prefix = "!"
+
+#[commands.bindings.ping]
+#    alias = "ping"
+#    permission = "basic.ping"
+#    executor = "com.github.psygate.discord.owlbot.commands.PingCommand"
